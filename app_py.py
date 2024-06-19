@@ -12,8 +12,10 @@ Original file is located at
 
 The Python SDK for the Gemini API, is contained in the [`google-generativeai`](https://pypi.org/project/google-generativeai/) package. Install the dependency using pip:
 """
+import pip
+pip.main(['install', '-q', '-U', 'google-generativeai'])
 
-!pip install -q -U google-generativeai
+#!pip install -q -U google-generativeai
 
 """### Import packages
 
@@ -60,9 +62,9 @@ For text-only prompts, use the `gemini-pro` model:
 
 model = genai.GenerativeModel('gemini-1.5-pro')
 
-pip install streamlit google-generativeai openai tenacity
-
-!pip install pyngrok
+#pip install streamlit google-generativeai openai tenacity
+pip.main(['install', '-q', 'streamlit', 'google-generativeai', 'openai', 'tenacity'])
+#!pip install pyngrok
 
 import streamlit as st
 
