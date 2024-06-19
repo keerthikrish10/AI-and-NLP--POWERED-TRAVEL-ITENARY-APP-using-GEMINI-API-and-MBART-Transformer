@@ -115,8 +115,9 @@ prompt = f"Suggest a {num_days}-day itinerary for {num_people} people visiting {
 
 # Generate response and display using Markdown
 if st.button("Generate Itinerary"):
-  response = model.generate(prompt=prompt)[0]
-  to_markdown(response)
+  response = model.generate_content(prompt)
+  print(response.text)
+
 
 # Stop ngrok tunnel when app closes (if applicable)
 if tunnel_url:
