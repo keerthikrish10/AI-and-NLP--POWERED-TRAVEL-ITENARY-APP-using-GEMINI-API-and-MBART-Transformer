@@ -62,39 +62,6 @@ model = genai.GenerativeModel('gemini-1.5-pro')
 
 pip install streamlit google-generativeai openai tenacity
 
-running = True
-while running:
-  # Get user input
-  destination = input("Enter the place you want to visit: ")
-  num_people = int(input("Enter the number of people traveling: "))
-  num_days = int(input("Enter the number of days of your stay: "))
-  budget = input("Enter your budget (low, medium, high): ")
-
-  # Get user's interests (allow multiple)
-  interests = []
-  print("Select your interests (enter 'done' when finished):")
-  while True:
-    interest = input(" - ").lower()
-    if interest == "done":
-      break
-    elif interest in ["history", "food", "adventure", "art", "nightlife"]:
-      interests.append(interest)
-    else:
-      print("Invalid interest. Please choose from history, food, adventure, art, or nightlife.")
-
-  # Build the prompt incorporating all user input
-  interest_string = ", ".join(interests) if interests else "no specific interests"
-  prompt = f"Suggest a {num_days}-day itinerary for {num_people} people visiting {destination}, with a budget of {budget}. Include interesting tourist spots that cater to {interest_string}."
-
-  response = model.generate_content(prompt)
-  print(response.text)
-
-  user_choice = input("What else would you like to know? (y/n): ")
-  if user_choice.lower() != 'y':
-    running = False
-
-print("Thank you for using the Tourist Planner!")
-
 !pip install pyngrok
 
 import streamlit as st
