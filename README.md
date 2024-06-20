@@ -1,4 +1,4 @@
-# AI-POWERED-TRAVEL-ITENARY-APP-using-GEMINI-API-integration-with-python-
+# AI-POWERED-TRAVEL-ITENARY-APP-using-GEMINI-API-integration-with-python-GRADIO
 Tourist Planner: Your AI-powered Travel Itinerary Generator
 This Streamlit web application leverages the power of Artificial Intelligence to create personalized travel itineraries for your dream destinations.
 
