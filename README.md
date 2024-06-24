@@ -1,6 +1,6 @@
 # AI-POWERED-TRAVEL-ITENARY-APP-using-GEMINI-API-integration-with-python-GRADIO
 Tourist Planner: Your AI-powered Travel Itinerary Generator
-This Streamlit web application leverages the power of Artificial Intelligence to create personalized travel itineraries for your dream destinations.
+This GRADIO or  Streamlit web application leverages the power of Artificial Intelligence to create personalized travel itineraries for your dream destinations.
 
 Key Features:
 
@@ -30,6 +30,6 @@ Run the app using streamlit run tourist_planner.py.
 Enter your travel details and interests, and generate a personalized itinerary!
 Deployment:
 
-Configure the Streamlit port and consider using cloud platforms for deployment to make the app publicly accessible.
+Configure the GRADIO or Streamlit port and consider using cloud platforms for deployment to make the app publicly accessible.
 
 This Tourist Planner app provides a convenient and informative way to kickstart your travel planning with AI-generated suggestions. Explore new destinations and create unforgettable memories with the help of this innovative tool!
